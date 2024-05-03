@@ -34,6 +34,9 @@ window.onload = function() {
 function createTiles() { 
 	var leftWrapper = document.querySelector('.left-wrapper');
 
+	// Clear placeholders before creating new dynamic tiles
+	leftWrapper.innerHTML = '';
+
 	for (var i = 0; i < constants.GAMES.length; i++) { 
 		var container = document.createElement('div');
 		var label = document.createElement('span');

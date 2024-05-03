@@ -13,8 +13,9 @@
 # VIDEOGAMES
 I created this small web application in a weekend for a Local Area Network (LAN) Party for my friend Evan's bachelor party. We had a dedicated laptop connected to speakers and would use it to select the next game to play. It can also act as an MP3 player. 
 
-Try it out [here](https://crisp-papa.github.io/party/)
 
+Try it out [here](https://crisp-papa.github.io/party/)
+> Note: The application was originally designed to be run in full screen. For the best user experience, enter full screen using ⌘ + F on Mac or <kbd>CTRL</kbd> + <kbd>Shift</kbd> + F on Windows.
 ## Features
 ### Game Selector
 Games can be selected using the buttons on the right hand side of the application.
