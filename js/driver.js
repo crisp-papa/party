@@ -1,6 +1,6 @@
 /* QUICK AND DIRTY */
 
-var audio = new Audio('mp3/hog.mp3');
+var audio = new Audio('mp3/fire.mp3');
 var currentSong = 0; 
 var intervalID = [];
 
