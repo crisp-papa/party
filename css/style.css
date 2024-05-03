@@ -1,0 +1,186 @@
+* {
+	box-sizing: border-box;
+	color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	/* display: inline-block; */
+}
+body { 
+	background-color: #111111;
+	position:relative;
+    max-width: 1920px;
+}
+.popup { 
+	display: none;
+	position:absolute;
+	top: 0; 
+	left: 0;
+	text-align:center;
+	background: rgba(77,101,141,0.8);
+	font-size: 72px;
+}
+.display { 
+	display: block;
+}
+.full { 
+	width: 100%;
+}
+.half { 
+	width: 48.98%;
+}
+.one-third {
+	width: 32.5%;
+}
+.two-thirds {
+	width: 65%;
+}
+.one-quarter {
+	width: 24%;
+}
+.break {
+	clear:both; 
+}
+.left-wrapper {
+	width: 80%;
+	float: left;
+}
+.right-wrapper {
+	width: 20%;
+	float: left;
+}
+.choice {     
+	max-width: 298px;
+    height: 100px;
+    width: 100%;
+    border: 5px solid #111111;
+    display: inline-block;
+    text-align:center;
+	line-height: 100px;
+	white-space: nowrap;
+    background-color: #0D5047;
+    position:relative;
+    font-size: 18px;
+}
+.counter { 
+	position:absolute; 
+    top: -38px;
+    right: 10px;
+}
+.led-wrapper {
+	width: 100%;
+	border: 1px solid white;
+	margin-bottom: 6px; 
+	display: inline-block;
+}
+.readout {
+	font-family: 'Orbitron', sans-serif;
+	background-color: black;
+	color: red;
+	height: 34px;
+	line-height: 38px;
+	text-align: center;
+	width:  100%;
+	border: 1px solid white;
+	padding: 0px;
+	font-size: 26px;
+}
+.speed { 
+	color: inherit;
+	font-size: inherit; 
+	font-family: inherit;
+}
+.svg { 
+    width: 100%;
+    height: 75px;
+}
+.button-wrapper {
+	display: inline-block;
+	position:relative;
+	height: 75px;
+	margin-bottom: 6px;
+}
+.button {
+	font-size: 1.5em;
+	position:absolute;
+	height: 75px;
+	width: 100%;
+	display: inline-block;
+	text-align:center;
+	line-height: 75px;
+	-webkit-box-shadow: 6px 6px 0px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 6px 6px 0px 0px rgba(0,0,0,0.75);
+	box-shadow: 6px 6px 0px 0px rgba(0,0,0,0.75);
+	cursor:pointer;
+}
+.button:hover {
+	-webkit-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75);
+	box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75);
+	margin-top: 3px;
+	margin-left: 3px;
+	width: 100%;
+}
+.button:active { 
+	-webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0.75);
+	-moz-box-shadow: 0 0 0 0 rgba(0,0,0,0.75);
+	box-shadow: 0 0 0 0 rgba(0,0,0,0.75);
+	margin-top: 6px;
+	margin-left: 6px;
+}
+.spin { 
+	background-color: green;
+}
+.stop { 
+	background-color: red;
+}
+.loop { 
+	
+}
+.restart { 
+	
+}
+.relabel { 
+	background-color: orange;
+}
+.play, .loop { 
+	background-color: #0C4700;
+}
+.pause, .restart { 
+	background-color: #133;
+}
+.selected {
+	border: 5px solid orange;
+}
+.controls { 
+    display: inline-block;
+    width: 100%;
+}
+.gif-container img { 
+	width: 100%; 
+	display: inline-block;
+}
+.full-span { 
+	width: 100%;
+	clear: both; 
+	font-size: 276px;
+	font-size: 14vw;
+    display: inline-block;
+}
+.full-span span { 
+    height: 228px;
+    display: inline-block;
+    float:left; 
+    letter-spacing: -1px;
+}
+
+.purple { background-color: rgba( 49, 21, 87,1) }
+.deep-purple { background-color: rgba( 28,  5, 58,1) }
+.dark-blue { background-color: #09093B;}
+.pale-orange { background-color: #AA7F39;}
+.pale-yellow { background-color: #FBF250;}
+.burnt-orange { background-color: #EC6625;}
