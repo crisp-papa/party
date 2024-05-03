@@ -77,15 +77,19 @@ function hidePopup() {
 }
 
 function randomSelection() { 
-	var choices = $('.choice');
-	choices.removeClass('selected');
+	const choices = document.querySelectorAll('.choice');
+	const index = dieRoller(choices.length);
 
-	/* IMPORTANT: REMOVE JQUERY */
-	//Actual selection
-	var index = dieRoller(choices.length);
-	$(choices[index]).addClass('selected');
+	// Remove currently selected choice if it exists
+	const currentlySelected = document.querySelector('.choice.selected');
+	if (currentlySelected) { 
+		document.querySelector('.choice.selected').classList.remove('selected');
+	}
 
-	//Sound
+	// Make a new choice
+	choices[index].classList.add('selected')
+
+	// Sound
 	var snd = new Audio("wav/fwep.wav"); 
 	snd.play();
 }
@@ -101,7 +105,6 @@ function relabelAll() {
 
 	var roygbiv = ["#d10000", "#ff6622", "#ffda21", "#33dd00", "#1133cc", "#220066", "#330044", "#d10000", "#ff6622", "#ffda21"];
 
-	//animate here (failed lol)
 	var span = document.querySelectorAll('.full-span span');
 	recolour();
 
@@ -131,7 +134,7 @@ function stop() {
 	snd.play();
 }
 
-//START AUDIO FUNCTIONS
+// Audio Functions
 
 function loop() { 
 	if (!audio.loop) { 
@@ -177,7 +180,7 @@ function restart() {
 function slowDown() { 
 	if ( audio.playbackRate > 0.5) { 
 		audio.playbackRate -= 0.05;
-		//Taking care of floating point math
+		// Taking care of floating point math
 		audio.playbackRate = audio.playbackRate.toPrecision(3);
 	}
 
@@ -187,13 +190,13 @@ function slowDown() {
 function speedUp() { 
 	if ( audio.playbackRate < 4) { 
 		audio.playbackRate += 0.05;
-		//Taking care of floating point math
+		// Taking care of floating point math
 		audio.playbackRate = audio.playbackRate.toPrecision(3);
 	}
 
 	document.querySelector('.readout').children[0].innerText = audio.playbackRate;
 }
-//END AUDIO FUNCTIONS
+// End audio functions
 
 /* https://bost.ocks.org/mike/shuffle/ example of Knuth Shuffle */ 
 function knuthShuffle(array) { 
