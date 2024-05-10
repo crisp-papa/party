@@ -1,6 +1,6 @@
 /* QUICK AND DIRTY */
 
-var audio = new Audio('mp3/fire.mp3');
+var audio = new Audio(`mp3/${constants.MP3[0]}`);
 var currentSong = 0; 
 var intervalID = [];
 
